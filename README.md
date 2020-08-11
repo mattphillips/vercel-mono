@@ -10,5 +10,4 @@ This means a custom `output directory` needs to be specified in the Vercel setti
 
 When setting it to `/app/.next` the app is successfully deployed but the static assets in the `app/public` folder are not deployed.
 
-The only workaround I have been able to find for this is to copy both the `app/public` and `app/.next` directories up to the project root after building and leave the custom `output directory` in the Vercel settings as being empty.
-
+The only workaround I have been able to find for this is to copy both the `app/public` and `app/.next` directories up to the project root after building and leave the custom `output directory` in the Vercel settings as being empty. (See the `package` script in the root package.json).

@@ -9,6 +9,7 @@
   "private": "true",
   "workspaces": ["app", "shared"],
   "scripts": {
+    "package": "yarn workspace @mp/app build && cp -r app/public . && cp -r app/.next .",
     "build": "yarn workspace @mp/app build",
     "dev": "yarn workspace @mp/app dev",
     "start": "yarn workspace @mp/app start"
